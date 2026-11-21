@@ -476,10 +476,6 @@ body {
     box-shadow: 0 5px 25px rgba(36, 28, 108, 0.06);
     transition: all 0.3s ease;
 }
-.card-1:hover{
-    /* transform: translateY(-4px); */
-    /* box-shadow: 0 10px 30px rgba(36, 28, 108, 0.12); */
-}
 .card1-icon{
     width: 60px;
     height: 60px;
@@ -1786,9 +1782,6 @@ body {
   margin-bottom: -1vw; /* Thoda sa neeche push karne ke liye */
 }
 
-/*
-
-
 /* =====================================================
    RESPONSIVE FIX
    Load this file AFTER your main stylesheet:
@@ -1811,9 +1804,6 @@ img {
     width: auto;
     max-width: 100%;
 }
-
-/*
-
 
 /* ---------- Large tablets and below (max 1199px) ---------- */
 @media (max-width: 1199px) {
