@@ -469,7 +469,7 @@
     }
 
     .filter-bar {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: stretch;
     }
 
