@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites | Nestoria</title>
+    <meta name="description" content="View the properties you saved on Nestoria.">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="pages.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body data-page="favorites">
+<div id="full-page">
+
+    <header class="site-header page-header"></header>
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <span class="page-eyebrow"><i class="fa-solid fa-heart"></i> YOUR SHORTLIST</span>
+            <h1>Your Saved Properties</h1>
+            <p>Homes you save appear here. Your list stays on this device, so you can compare them any time.</p>
+        </section>
+
+        <!-- SAVED LIST -->
+        <section class="page-section">
+            <div class="page-section-head">
+                <div>
+                    <span class="section-label">SAVED HOMES</span>
+                    <h2>Compare Your Favorite Homes</h2>
+                </div>
+                <div class="result-count" id="result-count" aria-live="polite">0 saved properties</div>
+            </div>
+
+            <div id="favorites-grid" class="properties-grid property-grid-scroll" hidden></div>
+
+            <div id="favorites-empty" class="empty-state" hidden>
+                <span class="empty-icon"><i class="fa-regular fa-heart"></i></span>
+                <h3>No saved properties yet</h3>
+                <p>Tap the heart on any home you like. It will appear in this list.</p>
+                <a href="listings.html" class="btn-primary">Browse Listings <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- EXTRA: TIPS -->
+        <section class="band">
+            <div class="page-section-head center-head">
+                <span class="section-label">COMPARING HOMES</span>
+                <h2 class="page-title">Tips for Choosing Between Your Favorites</h2>
+            </div>
+            <div class="tip-grid">
+                <article class="tip-card">
+                    <span class="tip-number">01</span>
+                    <h3>Shortlist three homes</h3>
+                    <p>Three strong options make a fair comparison easier than ten weak ones.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-number">02</span>
+                    <h3>Test the commute</h3>
+                    <p>Drive the route at rush hour. A short distance on the map can hide a long daily trip.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-number">03</span>
+                    <h3>Ask about upkeep</h3>
+                    <p>Ask for repair history, service fees and average utility costs before you decide.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- EXTRA: NEXT STEPS -->
+        <section class="page-section">
+            <div class="page-section-head center-head">
+                <span class="section-label">WHAT HAPPENS NEXT</span>
+                <h2 class="page-title">From Saved Home to Your New Address</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">01</div>
+                    <div class="timeline-body">
+                        <h3>Save your shortlist</h3>
+                        <p>Keep your favorite homes in one place. They stay on this device until you remove them.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">02</div>
+                    <div class="timeline-body">
+                        <h3>Book your viewings</h3>
+                        <p>Pick times that suit you. We confirm each slot with the owner or landlord.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">03</div>
+                    <div class="timeline-body">
+                        <h3>Sign with support</h3>
+                        <p>Our team reviews the lease or contract with you before you commit to anything.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-banner page-section">
+            <div class="cta-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="cta-content">
+                <h2>Ready to Visit Your Top Choice?</h2>
+                <p>Book a viewing with one of our advisors. We handle the schedule and the details.</p>
+            </div>
+            <div class="cta-button-wrapper">
+                <a href="services.html" class="get-started-btn">
+                    Book a Viewing <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer"></footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/ScrollTrigger.min.js"></script>
+<script src="components.js"></script>
+<script src="layout.js"></script>
+<script src="pages.js"></script>
+</body>
+</html>
